@@ -1,0 +1,73 @@
+html {
+    scroll-behavior: smooth;
+ } 
+body {
+    background-color: white;
+}
+#about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+    height: 45px;
+    margin-top: 15px;
+}
+.navbar ul {
+    list-style-type: none;
+    /*background-color: gray;*/
+    padding: 0%;
+    overflow: hidden;
+}
+.navbar a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+}
+.navbar li {
+    float: left;
+}
+.navbar a:hover {
+    background-color: rgb(75, 166, 166);
+
+}
+.name {
+    font-size: 9vw;
+    font-weight: 350;
+    color: #132a13;
+    font-family: rockwell, serif;
+    display: block;
+    margin: 5px;
+    /*border: solid black 1px;*/
+}
+.imglogo{
+    display: flex;
+}
+#logocontact1 ,#logocontact2{
+    width: 2em;
+    height: 2em;
+    margin-right: 20px;
+}
+footer {
+    display: block;
+    text-align: center;
+    height: 85px;
+    border: solid black 1px;
+    position: relative;
+}
+#infoperso{
+    width: 50%;
+    margin-left: 25%;
+    display: flex;
+    justify-content: space-around;
+    border: solid black 1px;
+    margin-top: 12px;
+}
+@media screen and (max-width: 768px) {
+    
+}
