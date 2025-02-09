@@ -17,6 +17,14 @@ body {
     font-weight: normal;
     font-style: normal;
 }
+hr{
+    width: 87%;
+    border: solid rgb(137, 137, 137) 1px;
+}
+.bio{
+    color: rgb(71, 71, 71);
+    font-family: serif;
+}
 #descp {
     color: rgb(65, 65, 65);
     font-size: 2vw;
@@ -24,29 +32,24 @@ body {
 }
 #about {
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
 }
 header{
-    display: flex;
-    width: auto;
-    justify-content: space-between;
-    height: 45px;
-    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 4px 5px;
+    margin-top: 74px;
+    padding-bottom: 5px;
 }
 nav{
-    background-color: #eeecec;
+    background-color: #aeaeae;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
     color: rgb(68, 68, 68);
     top: 0;
     left: 0;
     width: 100%;
     position: fixed;
     z-index: 1000;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
 }
 a{
     text-decoration: none;
@@ -78,8 +81,6 @@ a{
 }
 #presentation {
     line-height: 1.1;
-}
-.name {
     font-size: 4.4vw;
     font-weight: 650;
     color: #065106;
@@ -101,6 +102,9 @@ footer {
     height: 85px;
     border: solid black 1px;
     position: relative;
+}
+.univ {
+    color: #ac5300;
 }
 #infoperso{
     width: 50%;
@@ -134,11 +138,16 @@ footer {
     .navbar li{
         margin: 0 8px 2px 8px;
     }
-
-    #descp {
-        font-size: 4.9vw;
+    header {
+        margin-top: 19vw;
     }
-    .name{
-        font-size: 5.2vw;
+    #descp {
+        font-size: 4.6vw;
+    }
+    .ameth {
+        font-size: 6.7vw;
+    }
+    #about {
+        font-size: 3.5vw;
     }
 }
