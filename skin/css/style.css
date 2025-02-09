@@ -2,14 +2,25 @@ html {
     scroll-behavior: smooth;
  } 
 body {
-    background-color: white;
+    background-color: rgb(228, 228, 228);
     font-size: 100%;
+    font-family: rockwell, serif;
+    margin: 3px;
+    display: block;
 }
 @font-face {
     font-family: 'Sprintura Demo';
-    src: url('../../font/Sprintura Demo.otf') format('opentype');
+    src: 
+        url('../../font/Sprintura Demo.otf') format('opentype'),
+        url('../../font/Sprintura-Demo.woff') format('woff'),
+        url('../../font/Sprintura-Demo.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
+}
+#descp {
+    color: rgb(65, 65, 65);
+    font-size: 2vw;
+    font-weight: 200;
 }
 #about {
     align-items: center;
@@ -24,46 +35,57 @@ header{
     margin-top: 15px;
 }
 nav{
-    background-color: #dfdfdf;
-    height: 9vh;
+    background-color: #eeecec;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-radius: 10px;
+    color: rgb(68, 68, 68);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 #nom{
     margin-left: 1%;
-    border: solid black 1px;
-    font: 'Sprintura Demo', sans-serif;
+    font-size: 33px;
+    
 }
 .navbar ul {
     list-style-type: none;
     padding: 0%;
     overflow: hidden;
-    border: solid black 1px;
+    border-radius: 10px;
+    font-size: 17px;
 }
-.navbar a {
+.tete {
     text-decoration: none;
-    color: black;
+    color: rgb(185, 62, 0);
     display: block;
     padding: 10px;
-    font-weight: bold;
-    border: solid red 1px;
+    border-radius: 10px;
+    font-size: 17px;
+
 }
 .navbar li {
     float: left;
 }
-.navbar a:hover {
-    background-color: rgb(75, 166, 166);
-
+#presentation {
+    line-height: 1.1;
 }
 .name {
-    font-size: 9vw;
-    font-weight: 350;
-    color: #132a13;
-    font-family: rockwell, serif;
+    font-size: 4.4vw;
+    font-weight: 650;
+    color: #065106;
     display: block;
-    margin: 5px;
-    /*border: solid black 1px;*/
+    text-align: center;
+    margin-top: 4vw;
 }
 .imglogo{
     display: flex;
@@ -88,6 +110,35 @@ footer {
     border: solid black 1px;
     margin-top: 12px;
 }
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 708px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 18vw;
+        box-sizing: border-box;
+    }
+    .navbar ul{
+        margin: 0;
+    }
+    #nom{
+        font-size: 7vw;
+        display: block;
+        margin: 0;
+        margin-top: 8px;
+    }
+    .tete{
+        margin: 0px;
+        font-size: 3.4vw;
+        padding: 3px;
+    }
+    .navbar li{
+        margin: 0 8px 2px 8px;
+    }
+
+    #descp {
+        font-size: 4.9vw;
+    }
+    .name{
+        font-size: 5.2vw;
+    }
 }
