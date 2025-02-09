@@ -3,6 +3,13 @@ html {
  } 
 body {
     background-color: white;
+    font-size: 100%;
+}
+@font-face {
+    font-family: 'Sprintura Demo';
+    src: url('../../font/Sprintura Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 #about {
     align-items: center;
@@ -24,9 +31,9 @@ nav{
     align-items: center;
 }
 #nom{
-    font-size: 100%;
     margin-left: 1%;
     border: solid black 1px;
+    font: 'Sprintura Demo', sans-serif;
 }
 .navbar ul {
     list-style-type: none;
