@@ -51,9 +51,17 @@ nav{
     position: fixed;
     z-index: 1000;
 }
-a{
+.liendebut{
     text-decoration: none;
     color: inherit;
+}
+a{
+    display: flex;
+    text-decoration: none;
+    align-items: end;
+}
+.debutuniv{
+    color: rgb(185, 62, 0);
 }
 #nom{
     margin-left: 1%;
@@ -103,9 +111,6 @@ footer {
     border: solid black 1px;
     position: relative;
 }
-.univ {
-    color: #ac5300;
-}
 #infoperso{
     width: 50%;
     margin-left: 25%;
@@ -114,6 +119,136 @@ footer {
     border: solid black 1px;
     margin-top: 12px;
 }
+.titre{
+    color: rgb(103, 45, 0);
+}
+.corps{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vh;
+}
+
+#formation {
+    margin: 2vw;
+    /*border: solid 3px rgb(158, 158, 158);*/
+    border-radius: 10px;
+    padding: 0.5%;
+}
+.titreg{
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: #003500;
+}
+.contactameth{
+    height: 3vw;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.leslogos{
+    width: 20%;
+    height: 100%;
+    object-fit: contain;
+}
+.g{
+    width: 20%;
+    height: 90%;
+    overflow: hidden;
+    padding: none;
+    display: flex;
+}
+.nomlogo{
+    font-size: 1.5vw;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: end;
+}
+.titre {
+    font-size: 2.9vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.univ{
+    display: flex;
+    justify-content: space-between;
+}
+.descplicence{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3%;
+}
+.licence {
+    padding: 0.5%;
+}
+.nomlicence{
+    font-size: 2.4vw;
+    padding-left: 3%;
+    color: #0f0284c7;
+}
+.titresemestre {
+    font-size: 2vw;
+    display: block;
+    font-family: Rockwell, sans-serif;
+    margin: 1.5%;
+    font-weight: bold;
+    padding: 1%;
+    border-radius: 10px;
+    color: #003500;
+}
+.bar{
+    border: solid 2px rgb(98, 98, 98);
+}
+.sem{
+    width: 49%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+
+    padding: 1.5%;
+}
+.ecole{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 3vw;
+    height: 75%;
+}
+.loc{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 20%;
+}
+.nomdiplome {
+    width: 25%;
+    border: solid 1px rgb(114, 114, 114);
+    padding: 0.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.infodiplome{
+    width: 70%;
+}
+
+
+
+
 @media screen and (max-width: 708px) {
     nav {
         display: flex;
@@ -129,6 +264,9 @@ footer {
         display: block;
         margin: 0;
         margin-top: 8px;
+    }
+    .contactameth {
+        height: 7vw;
     }
     .tete{
         margin: 0px;
